@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ Hàng | Monster Burger</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="cart.html">GIỎ HÀNG</a></li>
+
+                    <li>
+                        <a href="">SẢN PHẨM</a>
+                        <ul id="danhmuc"></ul>
+                    </li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li>
+                        <a href="#" id="menuLogin">ĐĂNG NHẬP</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <br>
+        <br>
+        <br>
+
+
+        <div class="container">
+            <div class="row"><h1>Thông Tin Giỏ Hàng</h1></div>
+            <div class="row">
+                <table border="1">
+                    <tr>
+                        <th>STT</th>
+                        <th>TÊN SẢN PHẨM</th>
+                        <th>Hình</th>
+                        <th>Số Lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Thành Tiền</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                    <tbody id="addCart"></tbody>
+                    <tr>
+                        <td>Tổng thành tiền</td>
+                        <td colspan="5" id="tongtien"></td>
+                        <td>Thanh toán</td>
+                    </tr>
+                
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ROW">
+                <div>
+                    <h1> CẢ SẢN PHẨMTẤT</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="productAll"></div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+        
+                    <div class="footer-brand">
+                        <h2>MONSTER BURGER</h2>
+                        <p>Cắn một miếng — ngon hết ý!</p>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h3>Khám phá</h3>
+                        <ul>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="index.html">Thực đơn burger</a></li>
+                            <li><a href="index.html">Ưu đãi</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h3>Hỗ trợ</h3>
+                        <ul>
+                            <li><a href="cart.html">Giỏ hàng</a></li>
+                            <li><a href="index.html">Hướng dẫn đặt món</a></li>
+                            <li><a href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+        
+                <p class="footer-bottom">© 2026 Monster Burger</p>
+            </footer>
+
+            </script>
+
+            <script>
+
+                arr = ["image/banner3.jpg", "image/banner1.jpg", "image/banner4.png"];
+
+                let nut = arr.length;
+                for (let i = 1; i <= nut; i++) {
+                    document.getElementById("showbtn").innerHTML +=
+                        `<div class="btn1">${i}</div>`
+                }
+
+                let i = 0;
+                function right() {
+                    document.getElementById("banner").src = arr[i];
+                    i++;
+                    if (i == arr.length) {
+                        i = 0;
+                    }
+                }
+
+
+                function left() {
+                    document.getElementById("banner").src = arr[i];
+                    i--;
+                    if (i < 0) {
+                        i = arr.length - 1;
+                    }
+                }
+
+                setInterval(left, 3000);
+            </script>
+
+
+<script>
+    function detail(i){
+    window.location.href=`detail.html?id=${i}` // chuyển sang trang detail.html
+}
+</script>
+
+<script src="js/ds.js"> </script>
+<script src="js/cart.js"> </script>
+</body>
+
+</html>

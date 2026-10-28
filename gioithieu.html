@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu | Monster Burger</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="cart.html">GIỎ HÀNG</a></li>
+
+                    <li>
+                        <a href="">SẢN PHẨM</a>
+                        <ul id="danhmuc"></ul>
+                    </li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li>
+                        <a href="#" id="menuLogin">ĐĂNG NHẬP</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+
+    <main class="intro-page">
+        <div class="container">
+            <div class="row">
+                <div class="banner1">
+                    <img src="image/banner3.jpg" alt="Monster Burger" id="banner">
+                    <i class="fa-solid fa-angle-left btn-left vitri1" onclick="left()"></i>
+                    <i class="fa-solid fa-angle-right btn-right vitri2" onclick="right()"></i>
+                    <div class="btn" id="showbtn"></div>
+                </div>
+
+                <div class="banner2">
+                    <img src="image/bannerdoc.png" alt="Ưu đãi Monster Burger">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <section class="stats">
+                <div class="container stats-grid">
+                    <div class="stat-item">
+                        <h2>Tươi ngon</h2>
+                        <p>Nguyên liệu được chọn lọc</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h2>Đa dạng</h2>
+                        <p>Nhiều loại burger hấp dẫn</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h2>Nhanh chóng</h2>
+                        <p>Phục vụ tiện lợi</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h2>Thân thiện</h2>
+                        <p>Luôn quan tâm khách hàng</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section cars-section" id="cars">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="subtitle">Thế giới Monster Burger</span>
+                        <h2>Những chiếc burger nổi bật</h2>
+                        <p>
+                            Bánh mềm thơm ngon, nhân đầy đặn cùng những
+                            loại sốt hấp dẫn, sẵn sàng làm hài lòng vị giác của bạn.
+                        </p>
+                    </div>
+
+                    <div class="cars-grid">
+
+                        <article class="car-card">
+                            <div class="car-image">
+                                <img src="image/cb.jpg" alt="Burger bò">
+                                <span class="car-label">BURGER BÒ</span>
+                            </div>
+
+                            <div class="car-info">
+                                <h3>Burger Bò</h3>
+                                <p>
+                                    Thịt bò thơm ngon kết hợp cùng rau tươi,
+                                    phô mai và nước sốt đậm đà.
+                                </p>
+
+                                <div class="car-bottom">
+                                    <span class="car-price">Hương vị đậm đà</span>
+                                    <a href="index.html" class="car-link">Khám phá</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="car-card">
+                            <div class="car-image">
+                                <img src="image/dsb.jpg" alt="Burger gà">
+                                <span class="car-label">BURGER GÀ</span>
+                            </div>
+
+                            <div class="car-info">
+                                <h3>Burger Gà</h3>
+                                <p>
+                                    Thịt gà hấp dẫn kết hợp với bánh mì mềm,
+                                    rau xanh và sốt đặc trưng.
+                                </p>
+
+                                <div class="car-bottom">
+                                    <span class="car-price">Giòn ngon hấp dẫn</span>
+                                    <a href="index.html" class="car-link">Khám phá</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="car-card">
+                            <div class="car-image">
+                                <img src="image/bbb.jpg" alt="Burger đặc biệt">
+                                <span class="car-label">ĐẶC BIỆT</span>
+                            </div>
+
+                            <div class="car-info">
+                                <h3>Monster Burger</h3>
+                                <p>
+                                    Sự kết hợp đầy đặn của các nguyên liệu,
+                                    mang đến trải nghiệm burger khó quên.
+                                </p>
+
+                                <div class="car-bottom">
+                                    <span class="car-price">Đậm chất Monster</span>
+                                    <a href="index.html" class="car-link">Khám phá</a>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="about">
+                <div class="container about-grid">
+
+                    <div class="about-image">
+                        <img src="image/msb.jpg" alt="Burger đặc trưng Monster Burger">
+                    </div>
+
+                    <div class="about-content">
+                        <span class="subtitle">Về Monster Burger</span>
+
+                        <h2>Monster Burger – Bùng nổ hương vị trong từng chiếc bánh.</h2>
+
+                        <p>
+                            Monster Burger là điểm đến dành cho những ai yêu thích
+                            đồ ăn nhanh thơm ngon và tiện lợi. Chúng tôi mang đến
+                            những chiếc burger hấp dẫn với sự kết hợp giữa bánh mì,
+                            nhân burger và các loại sốt đậm vị.
+                        </p>
+
+                        <div class="feature">
+                            <div class="feature-icon">🍔</div>
+                            <div>
+                                <h3>Thực đơn đa dạng</h3>
+                                <p>
+                                    Nhiều lựa chọn burger bò, burger gà,
+                                    burger hải sản và burger chay.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">🥬</div>
+                            <div>
+                                <h3>Chú trọng nguyên liệu</h3>
+                                <p>
+                                    Kết hợp các nguyên liệu phù hợp để tạo nên
+                                    hương vị hấp dẫn trong từng phần ăn.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="feature">
+                            <div class="feature-icon">❤️</div>
+                            <div>
+                                <h3>Phục vụ bằng sự tận tâm</h3>
+                                <p>
+                                    Mong muốn mang đến trải nghiệm đặt món
+                                    thuận tiện và hài lòng cho khách hàng.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section benefits" id="benefits">
+                <div class="container">
+                    <div class="section-heading">
+                        <span class="subtitle">Điều làm nên sự khác biệt</span>
+                        <h2>Vì sao chọn Monster Burger?</h2>
+                        <p>
+                            Những chiếc burger hấp dẫn, thực đơn phong phú
+                            và trải nghiệm đặt món thuận tiện dành cho bạn.
+                        </p>
+                    </div>
+
+                    <div class="benefits-grid">
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🍔</div>
+                            <h3>Hương vị hấp dẫn</h3>
+                            <p>
+                                Bánh mì, nhân burger và nước sốt hòa quyện,
+                                tạo nên hương vị khó cưỡng.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">🛵</div>
+                            <h3>Đặt món tiện lợi</h3>
+                            <p>
+                                Dễ dàng xem thực đơn, lựa chọn món ăn
+                                và thêm sản phẩm vào giỏ hàng trên website.
+                            </p>
+                        </div>
+
+                        <div class="benefit-card">
+                            <div class="benefit-icon">😊</div>
+                            <h3>Luôn hướng đến khách hàng</h3>
+                            <p>
+                                Chúng tôi mong muốn mỗi trải nghiệm thưởng thức
+                                burger đều thật vui vẻ và đáng nhớ.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta" id="contact">
+                <div class="container">
+                    <h2>Sẵn sàng thưởng thức Monster Burger?</h2>
+
+                    <p>
+                        Khám phá thực đơn, chọn chiếc burger yêu thích
+                        và bắt đầu trải nghiệm hương vị hấp dẫn ngay hôm nay.
+                    </p>
+
+                    <a href="index.html" class="car-link">Xem thực đơn</a>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+
+            <div class="footer-brand">
+                <h2>MONSTER BURGER</h2>
+                <p>Cắn một miếng — ngon hết ý!</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Khám phá</h3>
+                <ul>
+                    <li><a href="gioithieu.html">Giới thiệu</a></li>
+                    <li><a href="index.html">Thực đơn burger</a></li>
+                    <li><a href="index.html">Ưu đãi</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Hỗ trợ</h3>
+                <ul>
+                    <li><a href="cart.html">Giỏ hàng</a></li>
+                    <li><a href="index.html">Hướng dẫn đặt món</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <p class="footer-bottom">© 2026 Monster Burger</p>
+    </footer>
+
+
+    <script>
+        const arr = [
+            "image/banner3.jpg",
+            "image/banner1.jpg",
+            "image/banner4.png"
+        ];
+
+        let i = 0;
+        const banner = document.getElementById("banner");
+        const showbtn = document.getElementById("showbtn");
+
+        arr.forEach((src, index) => {
+            const btn = document.createElement("div");
+            btn.className = "btn1";
+            btn.textContent = index + 1;
+            btn.onclick = function () {
+                i = index;
+                banner.src = arr[i];
+            };
+            showbtn.appendChild(btn);
+        });
+
+        function right() {
+            i = (i + 1) % arr.length;
+            banner.src = arr[i];
+        }
+
+        function left() {
+            i = (i - 1 + arr.length) % arr.length;
+            banner.src = arr[i];
+        }
+
+        setInterval(right, 3000);
+    </script>
+
+</body>
+
+</html>

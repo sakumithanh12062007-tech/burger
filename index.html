@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Chủ | Monster Burger</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div id="login" style="display: none;">
+
+        <!-- Nút đóng -->
+        <div id="btnClose"
+            style="position: absolute; top: 10px; right: 15px; cursor: pointer; font-weight: bold; font-size: 18px;">
+            x
+        </div>
+
+        <!-- FORM ĐĂNG NHẬP -->
+        <div id="formLogin">
+
+            <h1 style="text-align: center; margin-bottom: 15px;">
+                Đăng Nhập
+            </h1>
+
+            <form>
+                <div class="gr">
+
+                    <div>
+                        <label>Tài Khoản</label>
+                        <input type="text" id="username"
+                            placeholder="Nhập tài khoản">
+                    </div>
+
+                    <div>
+                        <label>Mật Khẩu</label>
+                        <input type="password" id="password"
+                            placeholder="Nhập mật khẩu">
+                    </div>
+
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button type="button" id="btnLogin">
+                            Đăng Nhập
+                        </button>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 15px;">
+                        Chưa có tài khoản?
+                        <a href="#" id="showRegister">Đăng ký</a>
+                    </p>
+
+                </div>
+            </form>
+
+        </div>
+
+        <!-- FORM ĐĂNG KÝ -->
+        <div id="formRegister" style="display: none;">
+
+            <h1 style="text-align: center; margin-bottom: 15px;">
+                Đăng Ký
+            </h1>
+
+            <form>
+                <div class="gr">
+
+                    <div>
+                        <label>Tài Khoản</label>
+                        <input type="text" id="regUsername"
+                            placeholder="Nhập tài khoản">
+                    </div>
+
+                    <div>
+                        <label>Email</label>
+                        <input type="email" id="regEmail"
+                            placeholder="Nhập email">
+                    </div>
+
+                    <div>
+                        <label>Số Điện Thoại</label>
+                        <input type="tel" id="regPhone"
+                            placeholder="Nhập số điện thoại">
+                    </div>
+
+                    <div>
+                        <label>Mật Khẩu</label>
+                        <input type="password" id="regPassword"
+                            placeholder="Nhập mật khẩu">
+                    </div>
+
+                    <div>
+                        <label>Xác Nhận Mật Khẩu</label>
+                        <input type="password" id="regConfirmPassword"
+                            placeholder="Nhập lại mật khẩu">
+                    </div>
+
+                    <div style="text-align: center; margin-top: 15px;">
+                        <button type="button" id="btnRegister">
+                            Đăng Ký
+                        </button>
+                    </div>
+
+                    <p style="text-align: center; margin-top: 15px;">
+                        Đã có tài khoản?
+                        <a href="#" id="showLogin">Đăng nhập</a>
+                    </p>
+
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="container">
+        <nav>
+
+            <div class="logo">
+                <img src="image/logo.png" alt="Logo">
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li><a href="cart.html">GIỎ HÀNG</a></li>
+
+                    <li>
+                        <a href="">SẢN PHẨM</a>
+                        <ul id="danhmuc"></ul>
+                    </li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="tintuc.html">TIN TỨC</a></li>
+                    <li>
+                        <a href="#" id="menuLogin">ĐĂNG NHẬP</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+
+        <div class="container">
+            <div class="row">
+                <div class="banner1"><img src="image/banner3.jpg" alt="" id="banner">
+                    <i class="fa-solid fa-angle-left btn-left" onclick="left()"></i>
+                    <i class="fa-solid fa-angle-right btn-right" onclick="right()"></i>
+                    <div class="btn" id="showbtn"></div>
+                </div>
+                <div class="banner2">
+                    <img src="image/bannerdoc.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="ROW">
+                <div>
+                    <h1>TẤT CẢ SẢN PHẨM</h1>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="show"></div>
+            </div>
+
+            
+            <div class="container">
+                <div class="row">
+                    <h1>burger Bò</h1>
+                </div>
+                <div class="row" id="BurgerBo"></div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="show"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1>burger Gà</h1>
+                </div>
+                <div class="row" id="BurgerGa"></div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="show"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1>burger Hải Sản</h1>
+                </div>
+                <div class="row" id="BurgerHS"></div>
+            </div>
+
+            <div class="container">
+                <div class="row" id="show"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <h1>burger Healthy</h1>
+                </div>
+                <div class="row" id="BurgerChay"></div>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-container">
+        
+                    <div class="footer-brand">
+                        <h2>MONSTER BURGER</h2>
+                        <p>Cắn một miếng — ngon hết ý!</p>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h3>Khám phá</h3>
+                        <ul>
+                            <li><a href="gioithieu.html">Giới thiệu</a></li>
+                            <li><a href="index.html">Thực đơn burger</a></li>
+                            <li><a href="index.html">Ưu đãi</a></li>
+                        </ul>
+                    </div>
+        
+                    <div class="footer-column">
+                        <h3>Hỗ trợ</h3>
+                        <ul>
+                            <li><a href="cart.html">Giỏ hàng</a></li>
+                            <li><a href="index.html">Hướng dẫn đặt món</a></li>
+                            <li><a href="#contact">Liên hệ</a></li>
+                        </ul>
+                    </div>
+        
+                </div>
+        
+                <p class="footer-bottom">© 2026 Monster Burger</p>
+            </footer>
+
+            </script>
+
+            <script>
+
+                arr = ["image/banner3.jpg", "image/banner1.jpg", "image/banner4.png"];
+
+                let nut = arr.length;
+                for (let i = 1; i <= nut; i++) {
+                    document.getElementById("showbtn").innerHTML +=
+                        `<div class="btn1">${i}</div>`
+                }
+
+                let i = 0;
+                function right() {
+                    document.getElementById("banner").src = arr[i];
+                    i++;
+                    if (i == arr.length) {
+                        i = 0;
+                    }
+                }
+
+
+                function left() {
+                    document.getElementById("banner").src = arr[i];
+                    i--;
+                    if (i < 0) {
+                        i = arr.length - 1;
+                    }
+                }
+
+                setInterval(left, 3000);
+            </script>
+            <script src="js/ds.js"> </script>
+
+<script>
+    for (let i = 0; i < dm.length; i++) {
+        document.getElementById("danhmuc").innerHTML += 
+        `<li><a href="">${danhmuc[i]}</a></li>`
+        
+    }
+</script>
+
+<script>
+    function detail(i){
+    window.location.href=`detail.html?id=${i}` // chuyển sang trang detail.html
+}
+</script>
+
+<script>
+
+for (let i = 0; i < ds.length; i++) {
+    document.getElementById("show").innerHTML +=
+        `
+            <div class="col3 m3">
+                <img src="image/${ds[i].hinh}" alt="">
+                <h3>${ds[i].ten} </h3>
+                    <p>${ds[i].gia}</p>
+                    <p>${ds[i].mota}</p>
+                    <button onclick='detail(${ds[i].id})'  value=${ds[i].id}>Chi Tiết</button>
+            </div>
+            `
+}
+</script>
+
+<script>
+    let BurgerBo = ds.filter(item => item.loai == "BurgerBo");
+for (let i = 0; i < BurgerBo.length; i++) {
+    document.getElementById("BurgerBo").innerHTML +=
+        `
+            <div class="col3 m3">
+                <img src="image/${BurgerBo[i].hinh}" alt="">
+                <h3>${BurgerBo[i].ten} </h3>
+                    <p>${BurgerBo[i].gia}</p>
+                    <p>${BurgerBo[i].mota}</p>
+                    <Button>Mua Ngay</Button>
+            </div>
+            `
+}
+
+let BurgerGa = ds.filter(item => item.loai == "BurgerGa");
+for (let i = 0; i < BurgerGa.length; i++) {
+    document.getElementById("BurgerGa").innerHTML +=
+        `
+            <div class="col3 m3">
+                <img src="image/${BurgerGa[i].hinh}" alt="">
+                <h3>${BurgerGa[i].ten} </h3>
+                    <p>${BurgerGa[i].gia}</p>
+                    <p>${BurgerGa[i].mota}</p>
+                    <Button>Mua Ngay</Button>
+            </div>
+            `
+}
+
+let BurgerHS = ds.filter(item => item.loai == "BurgerHS");
+for (let i = 0; i < BurgerHS.length; i++) {
+    document.getElementById("BurgerHS").innerHTML +=
+        `
+            <div class="col3 m3">
+                <img src="image/${BurgerHS[i].hinh}" alt="">
+                <h3>${BurgerHS[i].ten} </h3>
+                    <p>${BurgerHS[i].gia}</p>
+                    <p>${BurgerHS[i].mota}</p>
+                    <Button>Mua Ngay</Button>
+            </div>
+        `
+}
+
+let BurgerChay = ds.filter(item => item.loai == "BurgerChay");
+for (let i = 0; i < BurgerChay.length; i++) {
+    document.getElementById("BurgerChay").innerHTML +=
+        `
+            <div class="col3 m3">
+                <img src="image/${BurgerChay[i].hinh}" alt="">
+                <h3>${BurgerChay[i].ten} </h3>
+                    <p>${BurgerChay[i].gia}</p>
+                    <p>${BurgerChay[i].mota}</p>
+                    <Button>Mua Ngay</Button>
+            </div>
+        `
+} 
+ 
+</script>
+
+<script>
+    $(document).ready(function () {
+
+        // MỞ FORM ĐĂNG NHẬP
+        $('#menuLogin').click(function (e) {
+            e.preventDefault();
+            $('#login').show();
+            $('#formLogin').show();
+            $('#formRegister').hide();
+        });
+
+        // ĐÓNG FORM
+        $('#btnClose').click(function () {
+            $('#login').hide();
+        });
+
+        // CHUYỂN SANG ĐĂNG KÝ
+        $('#showRegister').click(function (e) {
+            e.preventDefault();
+            $('#formLogin').hide();
+            $('#formRegister').show();
+        });
+
+        // CHUYỂN VỀ ĐĂNG NHẬP
+        $('#showLogin').click(function (e) {
+            e.preventDefault();
+            $('#formRegister').hide();
+            $('#formLogin').show();
+        });
+
+        // XỬ LÝ ĐĂNG NHẬP
+        $('#btnLogin').click(function () {
+            let u = $('#username').val().trim();
+            let p = $('#password').val();
+
+            if (u === "" || p === "") {
+                alert("Vui lòng nhập tài khoản và mật khẩu!");
+                return;
+            }
+
+            if (u === "phong111" && p === "12345") {
+                alert("Đăng nhập thành công!");
+                $('#login').hide();
+            } else {
+                alert("Sai tài khoản hoặc mật khẩu!");
+            }
+        });
+
+        // XỬ LÝ ĐĂNG KÝ
+        $('#btnRegister').click(function () {
+            let u = $('#regUsername').val().trim();
+            let email = $('#regEmail').val().trim();
+            let phone = $('#regPhone').val().trim();
+            let p = $('#regPassword').val().trim();
+            let confirmP = $('#regConfirmPassword').val().trim();
+
+            // Chỉ kiểm tra thông tin trống
+            if (u === "" || email === "" || phone === "" ||
+                p === "" || confirmP === "") {
+                alert("Vui lòng nhập đầy đủ thông tin!");
+                return;
+            }
+
+            alert("Đăng ký thành công!");
+
+            $('#username').val(u);
+            $('#password').val('');
+
+            $('#regUsername, #regEmail, #regPhone, #regPassword, #regConfirmPassword').val('');
+
+            $('#formRegister').hide();
+            $('#formLogin').show();
+        });
+
+    });
+</script>
+
+</body>
+
+</html>

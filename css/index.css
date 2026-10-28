@@ -1,0 +1,955 @@
+body {
+    margin: 0 auto;
+    width: 1200px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #3b1f0b;
+}
+
+.container {
+    width: 100%;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f7941d;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    margin-left: 30px;
+    border-radius: 70%;
+}
+
+.menu {
+    margin-right: 60px
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-flex;
+    background-color: #f7941d;
+    padding: 10px;
+    list-style: none;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li {
+    position: relative;
+}
+
+.menu ul ul {
+    display: none;
+    z-index: 30;
+}
+
+.menu ul li:hover ul {
+    background-color: #f7941d;
+    display: block;
+    position: absolute;
+    top: 40px;
+    width: 120px;
+    padding: 0%;
+    margin: 0%;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #3b1f0b;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+ul li a:hover {
+    color: #ffffff;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    display: flex;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.banner1 {
+    position: relative;
+    width: 70%;
+    height: 500px;
+    display: flex;
+}
+
+.banner1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.btn-left {
+    position: absolute;
+    top: 45%;
+    left: 5px;
+    background-color: white;
+    color: #3b1f0b;
+    padding: 5px;
+}
+
+.btn-right {
+    position: absolute;
+    top: 45%;
+    right: 5px;
+    background-color: white;
+    color: #3b1f0b;
+    padding: 5px;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}
+
+.btn1 {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    color: #3b1f0b;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn1:hover {
+    background-color: #e87500;
+    color: white;
+    cursor: pointer;
+}
+
+.banner2 {
+    width: 30%;
+    height: 500px;
+}
+
+.banner2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu-doc ul {
+    flex-direction: column;
+}
+
+.menu-doc li {
+    display: inline-flex;
+    padding: 10px;
+    list-style: none;
+}
+
+.col3 {
+    position: relative;
+    height: 450px;
+    margin: 5PX;
+    width: calc(25% - 10px);
+    text-align: center;
+}
+
+.col3 img {
+    width: 100%;
+    height: 250px;
+}
+
+.col3 button {
+    background: #e87500;
+    color: white;
+    border: none;
+    padding: 8px 7px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+h3,
+p,
+h1 {
+    margin: 5px;
+}
+
+h1 {
+    color: #8b3e00;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+h3 {
+    color: #5c2c0c;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+p {
+    color: #5f4635;
+    font-size: 15px;
+}
+
+.km {
+    position: absolute;
+    top: 5px;
+    right: 0px;
+    width: 65px;
+    padding: 8px 7px;
+    background-color: #e87500;
+    color: white;
+    font-weight: 600;
+}
+
+.col4 {
+    height: 250px;
+    margin: 5PX;
+    width: calc(33.33% - 10px);
+}
+
+footer {
+    width: 100%;
+    height: 300px;
+    background-color: #e87500;
+}
+
+.left {
+    width: calc(75% - 10px);
+    margin-right: 5px;
+    height: 450px;
+    text-align: center;
+}
+
+.left img {
+    height: 300px;
+}
+
+.right {
+    width: 25%;
+    height: 450px;
+}
+
+.frame {
+    width: 200px;
+    height: 90px;
+    margin: 5px;
+}
+
+.frame img {
+    height: 90px;
+}
+
+.c {
+    width: 40px;
+    height: 40px;
+    background-color: #f7941d;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+.c1 img {
+    width: 40px;
+    height: 40px;
+}
+
+#login {
+    width: 400px;
+    min-height: 200px;
+    max-width: 90%;
+    max-height: 85vh;
+    overflow-y: auto;
+
+    background-color: #ffffff;
+    border: 1px solid gray;
+
+    position: fixed;
+    z-index: 9999;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.gr input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+/* ===== NÚT MUA NGAY TRÊN TRANG CART ===== */
+.fm1 {
+    display: inline-block;
+    background: #e87500;
+    color: #ffffff;
+    border: 2px solid #e87500;
+    border-radius: 6px;
+    padding: 10px 22px;
+    margin: 12px 0 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+.fm1:hover {
+    background: #3b1f0b;
+    border-color: #3b1f0b;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ===== KHOẢNG CÁCH VÀ MÀU SẮC THẺ SẢN PHẨM ===== */
+#productAll .col3 {
+    background: #ffffff;
+    border: 1px solid #f0dfcb;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 20px;
+    height: auto;
+    min-height: 450px;
+    box-shadow: 0 3px 8px rgba(59, 31, 11, 0.06);
+    transition: all 0.25s ease;
+}
+
+#productAll .col3:hover {
+    border-color: #f7941d;
+    box-shadow: 0 6px 16px rgba(139, 62, 0, 0.13);
+    transform: translateY(-3px);
+}
+
+#productAll .col3 img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+#productAll .product-name {
+    color: #5c2c0c;
+    margin: 12px 0 8px;
+}
+
+#productAll .product-type {
+    display: inline-block;
+    color: #8b3e00;
+    background: #ffecd2;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#productAll .product-price {
+    color: #e87500;
+    margin: 12px 0;
+}
+
+/* ===== BẢNG GIỎ HÀNG ===== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0 35px;
+    background: #ffffff;
+    border: 1px solid #edc99e;
+    border-radius: 8px;
+    overflow: hidden;
+    color: #3b1f0b;
+}
+
+table th {
+    background: #f7941d;
+    color: #3b1f0b;
+    padding: 14px 10px;
+    border: 1px solid #e8a34e;
+}
+
+table td {
+    padding: 12px 10px;
+    text-align: center;
+    border: 1px solid #f0dfcb;
+}
+
+table td img {
+    width: 75px !important;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+table tbody tr:nth-child(even) {
+    background: #fffaf3;
+}
+
+table tbody tr:hover {
+    background: #fff0d9;
+}
+
+table .remove_button {
+    background: #fff0e8;
+    color: #a33a16;
+    border: 1px solid #e8b7a2;
+    border-radius: 5px;
+    padding: 7px 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+table .remove_button:hover {
+    background: #a33a16;
+    color: #ffffff;
+}
+
+#tongtien {
+    color: #c65300;
+    background: #fff0d9;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #8b3e00;
+}
+
+body {
+    background-color: #fffaf3;
+}
+
+.intro-page {
+    color: #3b1f0b;
+    background-color: #fffaf3;
+}
+
+.intro-page .banner1,
+.intro-page .banner2 {
+    height: 350px;
+    overflow: hidden;
+}
+
+.intro-page .banner1 {
+    width: 70%;
+}
+
+.intro-page .banner2 {
+    width: 30%;
+}
+
+.intro-page .banner1 img,
+.intro-page .banner2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Thông tin nhanh */
+.intro-page .stats {
+    background-color: #3b1f0b;
+    color: #ffffff;
+    padding: 30px 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.intro-page .stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+.intro-page .stat-item h2 {
+    color: #f7941d;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.intro-page .stat-item p {
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* Các section */
+.intro-page .section {
+    padding: 60px 0;
+}
+
+.intro-page .section-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.intro-page .section-heading .subtitle {
+    color: #e87500;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.intro-page .section-heading h2 {
+    color: #3b1f0b;
+    font-size: clamp(25px, 4vw, 36px);
+    margin: 10px 0;
+}
+
+.intro-page .section-heading p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #6b5b50;
+}
+
+/* Thẻ burger nổi bật */
+.intro-page .cars-section {
+    background-color: #fffaf3;
+}
+
+.intro-page .cars-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.intro-page .car-card {
+    background-color: #ffffff;
+    border: 1px solid #f0dfca;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(59, 31, 11, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.intro-page .car-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(59, 31, 11, 0.16);
+}
+
+.intro-page .car-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.intro-page .car-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.intro-page .car-card:hover .car-image img {
+    transform: scale(1.05);
+}
+
+.intro-page .car-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 6px 10px;
+    background-color: #f7941d;
+    color: #3b1f0b;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.intro-page .car-info {
+    padding: 20px;
+}
+
+.intro-page .car-info h3 {
+    color: #3b1f0b;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.intro-page .car-info p {
+    color: #6b5b50;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.intro-page .car-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #f0dfca;
+    padding-top: 15px;
+}
+
+.intro-page .car-price {
+    color: #b65b00;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.intro-page .car-link {
+    display: inline-block;
+    padding: 9px 14px;
+    border-radius: 5px;
+    background-color: #f7941d;
+    color: #3b1f0b;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.intro-page .car-link:hover {
+    background-color: #e87500;
+    color: #ffffff;
+}
+
+/* Giới thiệu thương hiệu */
+.intro-page .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.intro-page .about-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.intro-page .about-content .subtitle {
+    color: #b65b00;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.intro-page .about-content h2 {
+    color: #3b1f0b;
+    font-size: clamp(25px, 3vw, 34px);
+    line-height: 1.3;
+    margin: 12px 0 18px;
+}
+
+.intro-page .about-content>p {
+    color: #6b5b50;
+    margin-bottom: 20px;
+}
+
+.intro-page .feature {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+    align-items: flex-start;
+}
+
+.intro-page .feature-icon {
+    min-width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7941d;
+    border-radius: 8px;
+    font-size: 21px;
+}
+
+.intro-page .feature h3 {
+    color: #3b1f0b;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.intro-page .feature p {
+    color: #6b5b50;
+    font-size: 14px;
+}
+
+.intro-page .benefits {
+    background-color: #f7941d;
+    color: #3b1f0b;
+}
+
+.intro-page .benefits .section-heading h2 {
+    color: #3b1f0b;
+}
+
+.intro-page .benefits .section-heading p {
+    color: #3b1f0b;
+}
+
+.intro-page .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.intro-page .benefit-card {
+    padding: 25px;
+    border: 1px solid rgba(59, 31, 11, 0.3);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.intro-page .benefit-card:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.intro-page .benefit-icon {
+    font-size: 34px;
+    margin-bottom: 12px;
+}
+
+.intro-page .benefit-card h3 {
+    color: #3b1f0b;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.intro-page .benefit-card p {
+    color: #3b1f0b;
+    font-size: 14px;
+}
+
+.intro-page .cta {
+    background-color: #3b1f0b;
+    padding: 55px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.intro-page .cta h2 {
+    color: #f7941d;
+    font-size: clamp(25px, 4vw, 36px);
+    margin-bottom: 15px;
+}
+
+.intro-page .cta p {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    color: #ffffff;
+}
+
+/* ===== FOOTER ===== */
+.footer {
+    background: #28170f;
+    color: #f8ebdd;
+    padding: 25px 20px 15px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.footer-brand,
+.footer-column {
+    flex: 1;
+}
+
+.footer-brand h2 {
+    color: #f7941d;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.footer-brand p {
+    color: #6b4b36;
+    font-size: 13px;
+    margin: 0;
+}
+
+.footer-column h3 {
+    color: #f7941d;
+    font-size: 16px;
+    margin: 0 0 12px;
+    text-align: left;
+}
+
+.footer-column ul {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column li {
+    margin-bottom: 8px;
+}
+
+.footer-column a {
+    display: block;
+    color: #f8ebdd;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: normal;
+}
+
+.footer-column a:hover {
+    color: #f7941d;
+}
+
+.footer-bottom {
+    max-width: 1000px;
+    margin: 15px auto 0;
+    padding-top: 12px;
+    border-top: 1px solid #60402c;
+    text-align: center;
+    font-size: 12px;
+    color: #d5bdaa;
+}
+
+.col3 {
+    border: 1px solid #f0dfcb;
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.col3:hover {
+    transform: translateY(-6px);
+    border-color: #f7941d;
+    box-shadow: 0 6px 16px rgba(59, 31, 11, 0.15);
+}
+
+
+.col3 button {
+    background-color: #e87500;
+    color: white;
+    border: 2px solid #e87500;
+    cursor: pointer;
+}
+
+.col3 button:hover {
+    background-color: #3b1f0b;
+    border-color: #3b1f0b;
+    color: white;
+}
+
+.news-list {
+    padding: 0 15px;
+}
+
+.news-card {
+    height: auto;
+    min-height: 390px;
+    padding: 12px;
+    background-color: #ffffff;
+    border: 1px solid #f0dfcb;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.news-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.news-card h3 {
+    margin: 12px 0;
+    color: #3b1f0b;
+}
+
+.news-card p {
+    margin: 8px 0 15px;
+    line-height: 1.6;
+}
+
+.news-button {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #e87500;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.news-list {
+    width: 100%;
+}
+
+.news-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.news-image {
+    flex: 0 0 240px;
+}
+
+.news-image img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.news-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.news-content h2 {
+    margin: 0 0 10px;
+    font-size: 21px;
+    font-weight: normal;
+}
+
+.news-meta {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #888;
+}
+
+.news-content p {
+    margin: 0 0 12px;
+    line-height: 1.6;
+}
+
+.news-link {
+    text-decoration: none;
+    color: #e87500;
+}
+
+.news-link:hover {
+    text-decoration: underline;
+}
+
